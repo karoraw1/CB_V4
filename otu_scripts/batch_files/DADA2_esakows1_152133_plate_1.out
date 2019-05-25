@@ -1,0 +1,682 @@
+Start Errors (1) 2019-05-21 12:10:10
+114291428 total bases in 834244 reads from 5 samples will be used for learning the error rates.
+Writing (F) errors to esakows1_152133_errorsWS_F.RData
+Start Errors (2) 2019-05-21 12:11:28
+117001562 total bases in 854026 reads from 6 samples will be used for learning the error rates.
+Writing (R) errors to esakows1_152133_errorsWS_R.RData
+Processing: 175_01_4_SJC 
+Start Derep (1) 2019-05-21 12:12:57
+Start Derep (2) 2019-05-21 12:13:01
+Start DADA (1) 2019-05-21 12:13:03
+Sample 1 - 126596 reads in 4064 unique sequences.
+Start DADA (2) 2019-05-21 12:13:03
+Sample 1 - 126596 reads in 4318 unique sequences.
+Processing: 176_05_4_SJC 
+Start Derep (1) 2019-05-21 12:13:06
+Start Derep (2) 2019-05-21 12:13:09
+Start DADA (1) 2019-05-21 12:13:13
+Sample 1 - 285197 reads in 6549 unique sequences.
+Start DADA (2) 2019-05-21 12:13:13
+Sample 1 - 285197 reads in 4932 unique sequences.
+Processing: 177_01_6_SJC 
+Start Derep (1) 2019-05-21 12:13:18
+Start Derep (2) 2019-05-21 12:13:20
+Start DADA (1) 2019-05-21 12:13:21
+Sample 1 - 140681 reads in 4669 unique sequences.
+Start DADA (2) 2019-05-21 12:13:21
+Sample 1 - 140681 reads in 5066 unique sequences.
+Processing: 178A_WaterBathControlA 
+Start Derep (1) 2019-05-21 12:13:24
+Start Derep (2) 2019-05-21 12:13:26
+Start DADA (1) 2019-05-21 12:13:27
+Sample 1 - 65559 reads in 3530 unique sequences.
+Start DADA (2) 2019-05-21 12:13:28
+Sample 1 - 65559 reads in 3529 unique sequences.
+Processing: 92_Mix93_Control_R1 
+Start Derep (1) 2019-05-21 12:13:30
+Start Derep (2) 2019-05-21 12:13:33
+Start DADA (1) 2019-05-21 12:13:36
+Sample 1 - 244329 reads in 13965 unique sequences.
+Start DADA (2) 2019-05-21 12:13:39
+Sample 1 - 244329 reads in 14565 unique sequences.
+Processing: 93_PBS_Blank_Control 
+Start Derep (1) 2019-05-21 12:13:46
+Start Derep (2) 2019-05-21 12:13:48
+Start DADA (1) 2019-05-21 12:13:49
+Sample 1 - 129553 reads in 6917 unique sequences.
+Start DADA (2) 2019-05-21 12:13:50
+Sample 1 - 129553 reads in 6724 unique sequences.
+Processing: 94_AmirControl_R1 
+Start Derep (1) 2019-05-21 12:13:53
+Start Derep (2) 2019-05-21 12:13:55
+Start DADA (1) 2019-05-21 12:13:56
+Sample 1 - 136112 reads in 11516 unique sequences.
+Start DADA (2) 2019-05-21 12:13:58
+Sample 1 - 136112 reads in 11836 unique sequences.
+Processing: 95_FiltCtrl_Surface_R1 
+Start Derep (1) 2019-05-21 12:14:03
+Start Derep (2) 2019-05-21 12:14:07
+Start DADA (1) 2019-05-21 12:14:09
+Sample 1 - 220773 reads in 11434 unique sequences.
+Start DADA (2) 2019-05-21 12:14:11
+Sample 1 - 220773 reads in 11421 unique sequences.
+Processing: 96_ZymoControl_R1 
+Start Derep (1) 2019-05-21 12:14:16
+Start Derep (2) 2019-05-21 12:14:17
+Start DADA (1) 2019-05-21 12:14:18
+Sample 1 - 94860 reads in 2926 unique sequences.
+Start DADA (2) 2019-05-21 12:14:19
+Sample 1 - 94860 reads in 3213 unique sequences.
+Processing: SB041117TAWCSCB22D11BR2TR1I288 
+Start Derep (1) 2019-05-21 12:14:21
+Start Derep (2) 2019-05-21 12:14:22
+Start DADA (1) 2019-05-21 12:14:23
+Sample 1 - 63587 reads in 15717 unique sequences.
+Start DADA (2) 2019-05-21 12:14:27
+Sample 1 - 63587 reads in 13597 unique sequences.
+Processing: SB041117TAWCSCB31D13BR1TR1I289 
+Start Derep (1) 2019-05-21 12:14:33
+Start Derep (2) 2019-05-21 12:14:35
+Start DADA (1) 2019-05-21 12:14:38
+Sample 1 - 176211 reads in 34110 unique sequences.
+Start DADA (2) 2019-05-21 12:14:57
+Sample 1 - 176211 reads in 31958 unique sequences.
+Processing: SB041117TAWCSCB32D10BR2TR1I290 
+Start Derep (1) 2019-05-21 12:15:20
+Start Derep (2) 2019-05-21 12:15:22
+Start DADA (1) 2019-05-21 12:15:23
+Sample 1 - 70910 reads in 14377 unique sequences.
+Start DADA (2) 2019-05-21 12:15:26
+Sample 1 - 70910 reads in 13503 unique sequences.
+Processing: SB041117TAWCSCB33CD24BR1TR1I291 
+Start Derep (1) 2019-05-21 12:15:34
+Start Derep (2) 2019-05-21 12:15:35
+Start DADA (1) 2019-05-21 12:15:36
+Sample 1 - 94033 reads in 7711 unique sequences.
+Start DADA (2) 2019-05-21 12:15:38
+Sample 1 - 94033 reads in 7197 unique sequences.
+Processing: SB041117TAWCSCB33CD5BR1TR1I286 
+Start Derep (1) 2019-05-21 12:15:40
+Start Derep (2) 2019-05-21 12:15:41
+Start DADA (1) 2019-05-21 12:15:43
+Sample 1 - 33224 reads in 5056 unique sequences.
+Start DADA (2) 2019-05-21 12:15:43
+Sample 1 - 33224 reads in 4880 unique sequences.
+Processing: SB041117TAWCSCB42CD26BR1TR1I293 
+Start Derep (1) 2019-05-21 12:15:45
+Start Derep (2) 2019-05-21 12:15:46
+Start DADA (1) 2019-05-21 12:15:48
+Sample 1 - 61523 reads in 11062 unique sequences.
+Start DADA (2) 2019-05-21 12:15:50
+Sample 1 - 61523 reads in 10052 unique sequences.
+Processing: SB041117TAWCSCB43CD27BR1TR1I294 
+Start Derep (1) 2019-05-21 12:15:55
+Start Derep (2) 2019-05-21 12:15:57
+Start DADA (1) 2019-05-21 12:15:59
+Sample 1 - 157280 reads in 15108 unique sequences.
+Start DADA (2) 2019-05-21 12:16:03
+Sample 1 - 157280 reads in 14204 unique sequences.
+Processing: SB041117TAWCSCB44D31BR1TR1I295 
+Start Derep (1) 2019-05-21 12:16:10
+Start Derep (2) 2019-05-21 12:16:12
+Start DADA (1) 2019-05-21 12:16:13
+Sample 1 - 127076 reads in 11957 unique sequences.
+Start DADA (2) 2019-05-21 12:16:17
+Sample 1 - 127076 reads in 11065 unique sequences.
+Processing: SB041117TAWCSCB51D33BR1TR1I296 
+Start Derep (1) 2019-05-21 12:16:22
+Start Derep (2) 2019-05-21 12:16:24
+Start DADA (1) 2019-05-21 12:16:26
+Sample 1 - 169525 reads in 15369 unique sequences.
+Start DADA (2) 2019-05-21 12:16:29
+Sample 1 - 169525 reads in 13988 unique sequences.
+Processing: SB041117TAWCSCB53D5BR1TR1I284 
+Start Derep (1) 2019-05-21 12:16:36
+Start Derep (2) 2019-05-21 12:16:38
+Start DADA (1) 2019-05-21 12:16:39
+Sample 1 - 66940 reads in 4565 unique sequences.
+Start DADA (2) 2019-05-21 12:16:40
+Sample 1 - 66940 reads in 4589 unique sequences.
+Processing: SB041117TAWCSCB54D25BR1TR1I300 
+Start Derep (1) 2019-05-21 12:16:41
+Start Derep (2) 2019-05-21 12:16:42
+Start DADA (1) 2019-05-21 12:16:44
+Sample 1 - 91730 reads in 5654 unique sequences.
+Start DADA (2) 2019-05-21 12:16:45
+Sample 1 - 91730 reads in 5304 unique sequences.
+Processing: SB041117TAWCSCB54D25BR2TR1I310 
+Start Derep (1) 2019-05-21 12:16:47
+Start Derep (2) 2019-05-21 12:16:48
+Start DADA (1) 2019-05-21 12:16:51
+Sample 1 - 87337 reads in 9412 unique sequences.
+Start DADA (2) 2019-05-21 12:16:52
+Sample 1 - 87337 reads in 8793 unique sequences.
+Processing: SB041117TAWCSCB62D9BR1TR1I303 
+Start Derep (1) 2019-05-21 12:16:56
+Start Derep (2) 2019-05-21 12:16:56
+Start DADA (1) 2019-05-21 12:16:57
+Sample 1 - 38722 reads in 3627 unique sequences.
+Start DADA (2) 2019-05-21 12:16:58
+Sample 1 - 38722 reads in 3433 unique sequences.
+Processing: SB041117TAWCSCB62D9BR1TR1I312 
+Start Derep (1) 2019-05-21 12:16:59
+Start Derep (2) 2019-05-21 12:17:01
+Start DADA (1) 2019-05-21 12:17:04
+Sample 1 - 147316 reads in 10398 unique sequences.
+Start DADA (2) 2019-05-21 12:17:06
+Sample 1 - 147316 reads in 9747 unique sequences.
+Processing: SB041117TAWCSCB63D10BR1TR1I304 
+Start Derep (1) 2019-05-21 12:17:10
+Start Derep (2) 2019-05-21 12:17:11
+Start DADA (1) 2019-05-21 12:17:13
+Sample 1 - 103968 reads in 8357 unique sequences.
+Start DADA (2) 2019-05-21 12:17:14
+Sample 1 - 103968 reads in 7615 unique sequences.
+Processing: SB041117TAWCSCB63D10BR2TR1I313 
+Start Derep (1) 2019-05-21 12:17:17
+Start Derep (2) 2019-05-21 12:17:21
+Start DADA (1) 2019-05-21 12:17:25
+Sample 1 - 338989 reads in 22732 unique sequences.
+Start DADA (2) 2019-05-21 12:17:30
+Sample 1 - 338989 reads in 20880 unique sequences.
+Processing: SB041117TAWCSCB71D20BR1TR1I306 
+Start Derep (1) 2019-05-21 12:17:41
+Start Derep (2) 2019-05-21 12:17:44
+Start DADA (1) 2019-05-21 12:17:46
+Sample 1 - 203390 reads in 12850 unique sequences.
+Start DADA (2) 2019-05-21 12:17:48
+Sample 1 - 203390 reads in 12573 unique sequences.
+Processing: SB041117TAWCSCB71D20BR2TR1I315 
+Start Derep (1) 2019-05-21 12:17:55
+Start Derep (2) 2019-05-21 12:17:57
+Start DADA (1) 2019-05-21 12:17:58
+Sample 1 - 76769 reads in 7878 unique sequences.
+Start DADA (2) 2019-05-21 12:17:59
+Sample 1 - 76769 reads in 7237 unique sequences.
+Processing: SB041117TAWCSCB72D20BR1TR1I307 
+Start Derep (1) 2019-05-21 12:18:02
+Start Derep (2) 2019-05-21 12:18:03
+Start DADA (1) 2019-05-21 12:18:05
+Sample 1 - 65766 reads in 5841 unique sequences.
+Start DADA (2) 2019-05-21 12:18:05
+Sample 1 - 65766 reads in 5449 unique sequences.
+Processing: SB041117TAWCSCB72D20BR1TR1I316 
+Start Derep (1) 2019-05-21 12:18:07
+Start Derep (2) 2019-05-21 12:18:09
+Start DADA (1) 2019-05-21 12:18:12
+Sample 1 - 174828 reads in 15018 unique sequences.
+Start DADA (2) 2019-05-21 12:18:16
+Sample 1 - 174828 reads in 13908 unique sequences.
+Processing: SB041117TAWCSCB73D12BR1TR1I308 
+Start Derep (1) 2019-05-21 12:18:23
+Start Derep (2) 2019-05-21 12:18:23
+Start DADA (1) 2019-05-21 12:18:26
+Sample 1 - 102692 reads in 9069 unique sequences.
+Start DADA (2) 2019-05-21 12:18:28
+Sample 1 - 102692 reads in 8498 unique sequences.
+Processing: SB041117TAWCSCB73D12BR1TR1I317 
+Start Derep (1) 2019-05-21 12:18:31
+Start Derep (2) 2019-05-21 12:18:32
+Start DADA (1) 2019-05-21 12:18:33
+Sample 1 - 157877 reads in 10794 unique sequences.
+Start DADA (2) 2019-05-21 12:18:36
+Sample 1 - 157877 reads in 10311 unique sequences.
+Processing: SB050817TAWCSCB22D11BR1TR1I322 
+Start Derep (1) 2019-05-21 12:18:42
+Start Derep (2) 2019-05-21 12:18:44
+Start DADA (1) 2019-05-21 12:18:45
+Sample 1 - 111797 reads in 17376 unique sequences.
+Start DADA (2) 2019-05-21 12:18:50
+Sample 1 - 111797 reads in 16010 unique sequences.
+Processing: SB050817TAWCSCB31D13BR1TR1I323 
+Start Derep (1) 2019-05-21 12:18:59
+Start Derep (2) 2019-05-21 12:19:02
+Start DADA (1) 2019-05-21 12:19:03
+Sample 1 - 114717 reads in 18691 unique sequences.
+Start DADA (2) 2019-05-21 12:19:09
+Sample 1 - 114717 reads in 18430 unique sequences.
+Processing: SB050817TAWCSCB32D10BR2TR1I324 
+Start Derep (1) 2019-05-21 12:19:18
+Start Derep (2) 2019-05-21 12:19:22
+Start DADA (1) 2019-05-21 12:19:26
+Sample 1 - 313175 reads in 27052 unique sequences.
+Start DADA (2) 2019-05-21 12:19:36
+Sample 1 - 313175 reads in 26549 unique sequences.
+Processing: SB050817TAWCSCB33CD24BR1TR1I325 
+Start Derep (1) 2019-05-21 12:19:53
+Start Derep (2) 2019-05-21 12:19:55
+Start DADA (1) 2019-05-21 12:19:55
+Sample 1 - 68316 reads in 7098 unique sequences.
+Start DADA (2) 2019-05-21 12:19:56
+Sample 1 - 68316 reads in 7135 unique sequences.
+Processing: SB050817TAWCSCB33CD5BR1TR1I320 
+Start Derep (1) 2019-05-21 12:19:59
+Start Derep (2) 2019-05-21 12:20:01
+Start DADA (1) 2019-05-21 12:20:04
+Sample 1 - 230425 reads in 15887 unique sequences.
+Start DADA (2) 2019-05-21 12:20:07
+Sample 1 - 230425 reads in 16753 unique sequences.
+Processing: SB050817TAWCSCB42CD26BR1TR1I327 
+Start Derep (1) 2019-05-21 12:20:15
+Start Derep (2) 2019-05-21 12:20:17
+Start DADA (1) 2019-05-21 12:20:26
+Sample 1 - 83579 reads in 7556 unique sequences.
+Start DADA (2) 2019-05-21 12:20:28
+Sample 1 - 83579 reads in 7509 unique sequences.
+Processing: SB050817TAWCSCB43CD27BR1TR1I328 
+Start Derep (1) 2019-05-21 12:20:31
+Start Derep (2) 2019-05-21 12:21:31
+Start DADA (1) 2019-05-21 12:21:32
+Sample 1 - 103084 reads in 9400 unique sequences.
+Start DADA (2) 2019-05-21 12:21:33
+Sample 1 - 103084 reads in 9240 unique sequences.
+Processing: SB050817TAWCSCB44D31BR1TR1I329 
+Start Derep (1) 2019-05-21 12:21:36
+Start Derep (2) 2019-05-21 12:21:38
+Start DADA (1) 2019-05-21 12:21:39
+Sample 1 - 72435 reads in 7431 unique sequences.
+Start DADA (2) 2019-05-21 12:21:40
+Sample 1 - 72435 reads in 7107 unique sequences.
+Processing: SB050817TAWCSCB51D33BR1TR1I330 
+Start Derep (1) 2019-05-21 12:21:43
+Start Derep (2) 2019-05-21 12:21:47
+Start DADA (1) 2019-05-21 12:21:50
+Sample 1 - 301243 reads in 22836 unique sequences.
+Start DADA (2) 2019-05-21 12:21:56
+Sample 1 - 301243 reads in 21641 unique sequences.
+Processing: SB050817TAWCSCB53D25BR2TR1I333 
+Start Derep (1) 2019-05-21 12:22:08
+Start Derep (2) 2019-05-21 12:22:10
+Start DADA (1) 2019-05-21 12:22:12
+Sample 1 - 162463 reads in 13705 unique sequences.
+Start DADA (2) 2019-05-21 12:22:15
+Sample 1 - 162463 reads in 13239 unique sequences.
+Processing: SB050817TAWCSCB53D5BR1TR1I318 
+Start Derep (1) 2019-05-21 12:22:20
+Start Derep (2) 2019-05-21 12:22:23
+Start DADA (1) 2019-05-21 12:22:25
+Sample 1 - 123444 reads in 7275 unique sequences.
+Start DADA (2) 2019-05-21 12:22:26
+Sample 1 - 123444 reads in 7710 unique sequences.
+Processing: SB050817TAWCSCB54D25BR1TR1I334 
+Start Derep (1) 2019-05-21 12:22:29
+Start Derep (2) 2019-05-21 12:22:30
+Start DADA (1) 2019-05-21 12:22:32
+Sample 1 - 95714 reads in 6770 unique sequences.
+Start DADA (2) 2019-05-21 12:22:33
+Sample 1 - 95714 reads in 6562 unique sequences.
+Processing: SB050817TAWCSCB54D25BR1TR1I343 
+Start Derep (1) 2019-05-21 12:22:35
+Start Derep (2) 2019-05-21 12:22:36
+Start DADA (1) 2019-05-21 12:22:38
+Sample 1 - 160238 reads in 14836 unique sequences.
+Start DADA (2) 2019-05-21 12:22:41
+Sample 1 - 160238 reads in 13831 unique sequences.
+Processing: SB050817TAWCSCB61D11BR1TR1I345 
+Start Derep (1) 2019-05-21 12:22:47
+Start Derep (2) 2019-05-21 12:22:48
+Start DADA (1) 2019-05-21 12:22:49
+Sample 1 - 78924 reads in 7628 unique sequences.
+Start DADA (2) 2019-05-21 12:22:50
+Sample 1 - 78924 reads in 6920 unique sequences.
+Processing: SB050817TAWCSCB62D9BR1TR1I337 
+Start Derep (1) 2019-05-21 12:22:53
+Start Derep (2) 2019-05-21 12:22:55
+Start DADA (1) 2019-05-21 12:22:57
+Sample 1 - 171807 reads in 9532 unique sequences.
+Start DADA (2) 2019-05-21 12:22:58
+Sample 1 - 171807 reads in 9731 unique sequences.
+Processing: SB050817TAWCSCB62D9BR1TR1I346 
+Start Derep (1) 2019-05-21 12:23:03
+Start Derep (2) 2019-05-21 12:23:05
+Start DADA (1) 2019-05-21 12:23:08
+Sample 1 - 171999 reads in 18206 unique sequences.
+Start DADA (2) 2019-05-21 12:23:13
+Sample 1 - 171999 reads in 17528 unique sequences.
+Processing: SB050817TAWCSCB63D10BR1TR1I338 
+Start Derep (1) 2019-05-21 12:23:22
+Start Derep (2) 2019-05-21 12:23:28
+Start DADA (1) 2019-05-21 12:23:33
+Sample 1 - 497889 reads in 21603 unique sequences.
+Start DADA (2) 2019-05-21 12:23:37
+Sample 1 - 497889 reads in 21767 unique sequences.
+Processing: SB050817TAWCSCB63D10BR2TR1I347 
+Start Derep (1) 2019-05-21 12:23:51
+Start Derep (2) 2019-05-21 12:23:51
+Start DADA (1) 2019-05-21 12:23:53
+Sample 1 - 66490 reads in 8513 unique sequences.
+Start DADA (2) 2019-05-21 12:23:54
+Sample 1 - 66490 reads in 7943 unique sequences.
+Processing: SB050817TAWCSCB71D20BR1TR1I340 
+Start Derep (1) 2019-05-21 12:23:57
+Start Derep (2) 2019-05-21 12:23:59
+Start DADA (1) 2019-05-21 12:24:00
+Sample 1 - 134998 reads in 9801 unique sequences.
+Start DADA (2) 2019-05-21 12:24:01
+Sample 1 - 134998 reads in 9860 unique sequences.
+Processing: SB050817TAWCSCB71D20BR2TR1I349 
+Start Derep (1) 2019-05-21 12:24:05
+Start Derep (2) 2019-05-21 12:24:07
+Start DADA (1) 2019-05-21 12:24:10
+Sample 1 - 163318 reads in 14390 unique sequences.
+Start DADA (2) 2019-05-21 12:24:13
+Sample 1 - 163318 reads in 14045 unique sequences.
+Processing: SB050817TAWCSCB72D20BR1TR1I341 
+Start Derep (1) 2019-05-21 12:24:19
+Start Derep (2) 2019-05-21 12:24:19
+Start DADA (1) 2019-05-21 12:24:21
+Sample 1 - 102772 reads in 6989 unique sequences.
+Start DADA (2) 2019-05-21 12:24:22
+Sample 1 - 102772 reads in 6807 unique sequences.
+Processing: SB050817TAWCSCB72D20BR1TR1I350 
+Start Derep (1) 2019-05-21 12:24:24
+Start Derep (2) 2019-05-21 12:24:26
+Start DADA (1) 2019-05-21 12:24:27
+Sample 1 - 89339 reads in 9825 unique sequences.
+Start DADA (2) 2019-05-21 12:24:29
+Sample 1 - 89339 reads in 8794 unique sequences.
+Processing: SB050817TAWCSCB73D12BR1TR1I342 
+Start Derep (1) 2019-05-21 12:24:32
+Start Derep (2) 2019-05-21 12:24:33
+Start DADA (1) 2019-05-21 12:24:34
+Sample 1 - 55478 reads in 5312 unique sequences.
+Start DADA (2) 2019-05-21 12:24:35
+Sample 1 - 55478 reads in 5073 unique sequences.
+Processing: SB050817TAWCSCB73D12BR1TR1I351 
+Start Derep (1) 2019-05-21 12:24:36
+Start Derep (2) 2019-05-21 12:24:38
+Start DADA (1) 2019-05-21 12:24:40
+Sample 1 - 159841 reads in 14171 unique sequences.
+Start DADA (2) 2019-05-21 12:24:43
+Sample 1 - 159841 reads in 13369 unique sequences.
+Processing: SB060517TAWCSCB22D11BR2TR1I356 
+Start Derep (1) 2019-05-21 12:24:48
+Start Derep (2) 2019-05-21 12:24:49
+Start DADA (1) 2019-05-21 12:24:50
+Sample 1 - 66689 reads in 7127 unique sequences.
+Start DADA (2) 2019-05-21 12:24:51
+Sample 1 - 66689 reads in 7400 unique sequences.
+Processing: SB060517TAWCSCB31D13BR1TR1I357 
+Start Derep (1) 2019-05-21 12:24:54
+Start Derep (2) 2019-05-21 12:24:55
+Start DADA (1) 2019-05-21 12:24:57
+Sample 1 - 76299 reads in 7888 unique sequences.
+Start DADA (2) 2019-05-21 12:24:58
+Sample 1 - 76299 reads in 7859 unique sequences.
+Processing: SB060517TAWCSCB32D10BR2TR1I358 
+Start Derep (1) 2019-05-21 12:25:00
+Start Derep (2) 2019-05-21 12:25:03
+Start DADA (1) 2019-05-21 12:25:05
+Sample 1 - 169733 reads in 14714 unique sequences.
+Start DADA (2) 2019-05-21 12:25:08
+Sample 1 - 169733 reads in 13868 unique sequences.
+Processing: SB060517TAWCSCB33CD24BR1TR1I359 
+Start Derep (1) 2019-05-21 12:25:13
+Start Derep (2) 2019-05-21 12:25:15
+Start DADA (1) 2019-05-21 12:25:17
+Sample 1 - 118220 reads in 11426 unique sequences.
+Start DADA (2) 2019-05-21 12:25:19
+Sample 1 - 118220 reads in 10783 unique sequences.
+Processing: SB060517TAWCSCB33CD5BR1TR1I354 
+Start Derep (1) 2019-05-21 12:25:23
+Start Derep (2) 2019-05-21 12:25:25
+Start DADA (1) 2019-05-21 12:25:26
+Sample 1 - 74259 reads in 5977 unique sequences.
+Start DADA (2) 2019-05-21 12:25:26
+Sample 1 - 74259 reads in 6226 unique sequences.
+Processing: SB060517TAWCSCB42CD26BR1TR1I361 
+Start Derep (1) 2019-05-21 12:25:29
+Start Derep (2) 2019-05-21 12:25:29
+Start DADA (1) 2019-05-21 12:25:30
+Sample 1 - 28896 reads in 4000 unique sequences.
+Start DADA (2) 2019-05-21 12:25:31
+Sample 1 - 28896 reads in 4058 unique sequences.
+Processing: SB060517TAWCSCB43CD27BR1TR1I362 
+Start Derep (1) 2019-05-21 12:25:32
+Start Derep (2) 2019-05-21 12:25:34
+Start DADA (1) 2019-05-21 12:25:36
+Sample 1 - 137838 reads in 11661 unique sequences.
+Start DADA (2) 2019-05-21 12:25:38
+Sample 1 - 137838 reads in 11538 unique sequences.
+Processing: SB060517TAWCSCB44D31BR1TR1I363 
+Start Derep (1) 2019-05-21 12:25:43
+Start Derep (2) 2019-05-21 12:25:44
+Start DADA (1) 2019-05-21 12:25:47
+Sample 1 - 115555 reads in 13015 unique sequences.
+Start DADA (2) 2019-05-21 12:25:50
+Sample 1 - 115555 reads in 11895 unique sequences.
+Processing: SB060517TAWCSCB44D5BR1TR1I353 
+Start Derep (1) 2019-05-21 12:25:55
+Start Derep (2) 2019-05-21 12:25:57
+Start DADA (1) 2019-05-21 12:25:59
+Sample 1 - 165290 reads in 10947 unique sequences.
+Start DADA (2) 2019-05-21 12:26:01
+Sample 1 - 165290 reads in 11525 unique sequences.
+Processing: SB060517TAWCSCB51D33BR1TR1I364 
+Start Derep (1) 2019-05-21 12:26:05
+Start Derep (2) 2019-05-21 12:26:06
+Start DADA (1) 2019-05-21 12:26:07
+Sample 1 - 56281 reads in 5665 unique sequences.
+Start DADA (2) 2019-05-21 12:26:08
+Sample 1 - 56281 reads in 5364 unique sequences.
+Processing: SB060517TAWCSCB53D25BR2TR1I367 
+Start Derep (1) 2019-05-21 12:26:10
+Start Derep (2) 2019-05-21 12:26:11
+Start DADA (1) 2019-05-21 12:26:12
+Sample 1 - 68252 reads in 6528 unique sequences.
+Start DADA (2) 2019-05-21 12:26:13
+Sample 1 - 68252 reads in 6004 unique sequences.
+Processing: SB060517TAWCSCB53D5BR1TR1I352 
+Start Derep (1) 2019-05-21 12:26:16
+Start Derep (2) 2019-05-21 12:26:18
+Start DADA (1) 2019-05-21 12:26:20
+Sample 1 - 86490 reads in 8679 unique sequences.
+Start DADA (2) 2019-05-21 12:26:21
+Sample 1 - 86490 reads in 8852 unique sequences.
+Processing: SB060517TAWCSCB54D25BR1TR1I368 
+Start Derep (1) 2019-05-21 12:26:24
+Start Derep (2) 2019-05-21 12:26:26
+Start DADA (1) 2019-05-21 12:26:28
+Sample 1 - 83809 reads in 7193 unique sequences.
+Start DADA (2) 2019-05-21 12:26:29
+Sample 1 - 83809 reads in 7118 unique sequences.
+Processing: SB060517TAWCSCB54D25BR1TR1I377 
+Start Derep (1) 2019-05-21 12:26:31
+Start Derep (2) 2019-05-21 12:26:36
+Start DADA (1) 2019-05-21 12:26:41
+Sample 1 - 464363 reads in 26302 unique sequences.
+Start DADA (2) 2019-05-21 12:26:47
+Sample 1 - 464363 reads in 25522 unique sequences.
+Processing: SB060517TAWCSCB61D11BR1TR1I370 
+Start Derep (1) 2019-05-21 12:27:01
+Start Derep (2) 2019-05-21 12:27:03
+Start DADA (1) 2019-05-21 12:27:06
+Sample 1 - 145231 reads in 9954 unique sequences.
+Start DADA (2) 2019-05-21 12:27:07
+Sample 1 - 145231 reads in 9596 unique sequences.
+Processing: SB060517TAWCSCB61D11BR1TR1I379 
+Start Derep (1) 2019-05-21 12:27:11
+Start Derep (2) 2019-05-21 12:27:17
+Start DADA (1) 2019-05-21 12:27:23
+Sample 1 - 551660 reads in 32776 unique sequences.
+Start DADA (2) 2019-05-21 12:27:31
+Sample 1 - 551660 reads in 32121 unique sequences.
+Processing: SB060517TAWCSCB62D9BR1TR1I371 
+Start Derep (1) 2019-05-21 12:27:49
+Start Derep (2) 2019-05-21 12:27:51
+Start DADA (1) 2019-05-21 12:27:51
+Sample 1 - 119135 reads in 7354 unique sequences.
+Start DADA (2) 2019-05-21 12:27:52
+Sample 1 - 119135 reads in 7665 unique sequences.
+Processing: SB060517TAWCSCB62D9BR1TR1I380 
+Start Derep (1) 2019-05-21 12:27:56
+Start Derep (2) 2019-05-21 12:27:58
+Start DADA (1) 2019-05-21 12:28:01
+Sample 1 - 168853 reads in 13034 unique sequences.
+Start DADA (2) 2019-05-21 12:28:03
+Sample 1 - 168853 reads in 12871 unique sequences.
+Processing: SB060517TAWCSCB63D10BR1TR1I372 
+Start Derep (1) 2019-05-21 12:28:08
+Start Derep (2) 2019-05-21 12:28:09
+Start DADA (1) 2019-05-21 12:28:12
+Sample 1 - 111249 reads in 7495 unique sequences.
+Start DADA (2) 2019-05-21 12:28:12
+Sample 1 - 111249 reads in 7301 unique sequences.
+Processing: SB060517TAWCSCB63D10BR1TR1I381 
+Start Derep (1) 2019-05-21 12:28:15
+Start Derep (2) 2019-05-21 12:28:17
+Start DADA (1) 2019-05-21 12:28:19
+Sample 1 - 175166 reads in 14641 unique sequences.
+Start DADA (2) 2019-05-21 12:28:22
+Sample 1 - 175166 reads in 13941 unique sequences.
+Processing: SB060517TAWCSCB71D20BR1TR1I374 
+Start Derep (1) 2019-05-21 12:28:27
+Start Derep (2) 2019-05-21 12:28:28
+Start DADA (1) 2019-05-21 12:28:30
+Sample 1 - 82243 reads in 5367 unique sequences.
+Start DADA (2) 2019-05-21 12:28:30
+Sample 1 - 82243 reads in 5347 unique sequences.
+Processing: SB060517TAWCSCB71D20BR1TR1I383 
+Start Derep (1) 2019-05-21 12:28:32
+Start Derep (2) 2019-05-21 12:28:34
+Start DADA (1) 2019-05-21 12:28:35
+Sample 1 - 125552 reads in 9756 unique sequences.
+Start DADA (2) 2019-05-21 12:28:37
+Sample 1 - 125552 reads in 9516 unique sequences.
+Processing: SB060517TAWCSCB73D12BR1TR1I376 
+Start Derep (1) 2019-05-21 12:28:42
+Start Derep (2) 2019-05-21 12:28:43
+Start DADA (1) 2019-05-21 12:28:44
+Sample 1 - 98672 reads in 7233 unique sequences.
+Start DADA (2) 2019-05-21 12:28:45
+Sample 1 - 98672 reads in 6749 unique sequences.
+Processing: SB060517TAWCSCB73D12BR1TR1I385 
+Start Derep (1) 2019-05-21 12:28:48
+Start Derep (2) 2019-05-21 12:28:50
+Start DADA (1) 2019-05-21 12:28:50
+Sample 1 - 30299 reads in 6034 unique sequences.
+Start DADA (2) 2019-05-21 12:28:51
+Sample 1 - 30299 reads in 5422 unique sequences.
+Processing: SB071017TAWCSCB22D11BR2TR1I390 
+Start Derep (1) 2019-05-21 12:28:53
+Start Derep (2) 2019-05-21 12:28:56
+Start DADA (1) 2019-05-21 12:28:59
+Sample 1 - 212880 reads in 22676 unique sequences.
+Start DADA (2) 2019-05-21 12:29:06
+Sample 1 - 212880 reads in 23323 unique sequences.
+Processing: SB071017TAWCSCB31D13BR1TR1I391 
+Start Derep (1) 2019-05-21 12:29:20
+Start Derep (2) 2019-05-21 12:29:22
+Start DADA (1) 2019-05-21 12:29:23
+Sample 1 - 79147 reads in 10151 unique sequences.
+Start DADA (2) 2019-05-21 12:29:25
+Sample 1 - 79147 reads in 10421 unique sequences.
+Processing: SB071017TAWCSCB33CD24BR1TR1I393 
+Start Derep (1) 2019-05-21 12:29:29
+Start Derep (2) 2019-05-21 12:29:31
+Start DADA (1) 2019-05-21 12:29:34
+Sample 1 - 189702 reads in 16997 unique sequences.
+Start DADA (2) 2019-05-21 12:29:37
+Sample 1 - 189702 reads in 17098 unique sequences.
+Processing: SB071017TAWCSCB33CD5BR1TR1I388 
+Start Derep (1) 2019-05-21 12:29:46
+Start Derep (2) 2019-05-21 12:29:48
+Start DADA (1) 2019-05-21 12:29:50
+Sample 1 - 79508 reads in 7920 unique sequences.
+Start DADA (2) 2019-05-21 12:29:51
+Sample 1 - 79508 reads in 7776 unique sequences.
+Processing: SB071017TAWCSCB42CD26BR1TR1I395 
+Start Derep (1) 2019-05-21 12:29:54
+Start Derep (2) 2019-05-21 12:29:56
+Start DADA (1) 2019-05-21 12:29:57
+Sample 1 - 89993 reads in 8842 unique sequences.
+Start DADA (2) 2019-05-21 12:29:59
+Sample 1 - 89993 reads in 8933 unique sequences.
+Processing: SB071017TAWCSCB43CD27BR1TR1I396 
+Start Derep (1) 2019-05-21 12:30:02
+Start Derep (2) 2019-05-21 12:30:04
+Start DADA (1) 2019-05-21 12:30:05
+Sample 1 - 110498 reads in 12143 unique sequences.
+Start DADA (2) 2019-05-21 12:30:08
+Sample 1 - 110498 reads in 11832 unique sequences.
+Processing: SB071017TAWCSCB44D31BR1TR1I397 
+Start Derep (1) 2019-05-21 12:30:13
+Start Derep (2) 2019-05-21 12:30:15
+Start DADA (1) 2019-05-21 12:30:16
+Sample 1 - 107572 reads in 14147 unique sequences.
+Start DADA (2) 2019-05-21 12:30:19
+Sample 1 - 107572 reads in 13554 unique sequences.
+Processing: SB071017TAWCSCB44D5BR1TR1I387 
+Start Derep (1) 2019-05-21 12:30:25
+Start Derep (2) 2019-05-21 12:30:27
+Start DADA (1) 2019-05-21 12:30:28
+Sample 1 - 128829 reads in 9435 unique sequences.
+Start DADA (2) 2019-05-21 12:30:29
+Sample 1 - 128829 reads in 9752 unique sequences.
+Processing: SB071017TAWCSCB51D33BR1TR1I398 
+Start Derep (1) 2019-05-21 12:30:33
+Start Derep (2) 2019-05-21 12:30:34
+Start DADA (1) 2019-05-21 12:30:35
+Sample 1 - 82023 reads in 9054 unique sequences.
+Start DADA (2) 2019-05-21 12:30:37
+Sample 1 - 82023 reads in 8442 unique sequences.
+Processing: SB071017TAWCSCB54D25BR1TR1I402 
+Start Derep (1) 2019-05-21 12:30:39
+Start Derep (2) 2019-05-21 12:30:41
+Start DADA (1) 2019-05-21 12:30:44
+Sample 1 - 103994 reads in 7112 unique sequences.
+Start DADA (2) 2019-05-21 12:30:44
+Sample 1 - 103994 reads in 6828 unique sequences.
+Processing: SB071017TAWCSCB54D25BR2TR1I412 
+Start Derep (1) 2019-05-21 12:30:47
+Start Derep (2) 2019-05-21 12:30:48
+Start DADA (1) 2019-05-21 12:30:50
+Sample 1 - 117180 reads in 11572 unique sequences.
+Start DADA (2) 2019-05-21 12:30:52
+Sample 1 - 117180 reads in 11136 unique sequences.
+Processing: SB071017TAWCSCB62D9BR1TR1I405 
+Start Derep (1) 2019-05-21 12:30:56
+Start Derep (2) 2019-05-21 12:30:59
+Start DADA (1) 2019-05-21 12:31:01
+Sample 1 - 185804 reads in 11409 unique sequences.
+Start DADA (2) 2019-05-21 12:31:03
+Sample 1 - 185804 reads in 10882 unique sequences.
+Processing: SB071017TAWCSCB62D9BR1TR1I414 
+Start Derep (1) 2019-05-21 12:31:08
+Start Derep (2) 2019-05-21 12:31:08
+Start DADA (1) 2019-05-21 12:31:09
+Sample 1 - 1 reads in 1 unique sequences.
+Start DADA (2) 2019-05-21 12:31:09
+Sample 1 - 1 reads in 1 unique sequences.
+Processing: SB071017TAWCSCB63D10BR1TR1I406 
+Start Derep (1) 2019-05-21 12:31:09
+Start Derep (2) 2019-05-21 12:31:10
+Start DADA (1) 2019-05-21 12:31:12
+Sample 1 - 81313 reads in 5843 unique sequences.
+Start DADA (2) 2019-05-21 12:31:13
+Sample 1 - 81313 reads in 5591 unique sequences.
+Processing: SB071017TAWCSCB71D20BR1TR1I408 
+Start Derep (1) 2019-05-21 12:31:15
+Start Derep (2) 2019-05-21 12:31:20
+Start DADA (1) 2019-05-21 12:31:24
+Sample 1 - 412534 reads in 18410 unique sequences.
+Start DADA (2) 2019-05-21 12:31:27
+Sample 1 - 412534 reads in 17588 unique sequences.
+Processing: SB071017TAWCSCB72D20BR1TR1I409 
+Start Derep (1) 2019-05-21 12:31:37
+Start Derep (2) 2019-05-21 12:31:38
+Start DADA (1) 2019-05-21 12:31:41
+Sample 1 - 125029 reads in 8993 unique sequences.
+Start DADA (2) 2019-05-21 12:31:42
+Sample 1 - 125029 reads in 8297 unique sequences.
+Processing: SB071017TAWCSCB73D12BR1TR1I410 
+Start Derep (1) 2019-05-21 12:31:45
+Start Derep (2) 2019-05-21 12:31:46
+Start DADA (1) 2019-05-21 12:31:49
+Sample 1 - 115594 reads in 7888 unique sequences.
+Start DADA (2) 2019-05-21 12:31:50
+Sample 1 - 115594 reads in 7572 unique sequences.
+Finished DADA 2019-05-21 12:31:53
+Writing raw table to /home-3/karoraw1@jhu.edu/scratch/CB_V3/otu_data/dada2_outputs/esakows1_152133_plate_1/esakows1_152133_raw_tab.RData
+Finished Seq table 2019-05-21 12:32:26
+Writing seq table to /home-3/karoraw1@jhu.edu/scratch/CB_V3/otu_data/dada2_outputs/esakows1_152133_plate_1/esakows1_152133_seqtab_chim.rds

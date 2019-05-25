@@ -1,0 +1,15 @@
+# Location of Sample Sheet with a row for each library
+# The columns here are:
+## 'sequencing ID' : the name of the sequencing run
+## 'Demux_Bool': True or False if the files are demultiplexed
+## 'SampleID': An identifier for each library
+## '2nd step barcode sequence': the barcode sequence for each file (for demuxing)
+sample_sheet: ../otu_data/SampleSheet_052019.tsv
+
+# Location of raw sequences containing a subdirectory for each run
+## In each subdirectory theres a folder called "FASTQ" that contains the raw sequencing runs
+## Within FASTQ there should be Demux, Trim, and Preprocess which will be created
+data_directory: /home-3/karoraw1@jhu.edu/work/sprehei1/Keith_Files/Processed_data_group
+
+# Location to store scripts created by copying the skeletons
+batch_dir: batch_files

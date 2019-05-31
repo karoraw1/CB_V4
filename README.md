@@ -23,8 +23,6 @@
 17. pplacer 1.1.alpha19
 
 
-
-
 ### Process:
 
 1. In `otu_scripts` there is a file called `config.yml`. Fill this out first.
@@ -41,10 +39,13 @@
 11. Edit `mergeRunandTaxa.sh` to point to your input files and DBs and run.
 12. Confirm that TSVs with abundances and taxa are in `dada2_outputs`
 13. Run the steps in `make_tree_1.sh` to create a reference tree for `pplacer`
-14. Run `make_tree_2.sh` to remove low quality sequences
-15. 
+14. Run `make_tree_p2.sh` to remove low quality sequences
+15. Run `make_tree_p3.sh` to place sequences on a tree
+16. Run `cluster_asv_table.sh` to make centroids
+17. Use [MAFFT server](https://mafft.cbrc.jp/alignment/server/large.html) to make alignment and trees.
+17. Run `Preliminary_OTU_Table_Analysis` to make first batch of figures
 
-Current step: fixing the PCA producer and sequence producer to feed into the treemaker
+
 
 
 

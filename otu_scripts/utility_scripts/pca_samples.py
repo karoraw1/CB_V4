@@ -80,6 +80,10 @@ elif task_name == 'cm_data':
     tails = [OTU_name2seq[i] for i in heads]
     with open(os.path.join(out_path, 'query_cmsearched.fasta'), "w") as wofh:
         wofh.write("".join([">{}\n{}\n".format(i, j) for i, j in zip(heads, tails)]))
+    
+    # write out fresh abundance table
+    abund_df3.to_csv(os.path.join(out_path, 'hq_asv_table.tsv'), sep="\t")
+    
 elif this_step == 'pca_figs':
     # redo this step
     with open("../data/TREEs/cmsearch_figs/poor_aligners.txt") as paFH:

@@ -13,7 +13,7 @@
 #SBATCH --error=mt33p.err
 #SBATCH --output=mt33p.out
 
-LOC_DIR=~/scratch/CB_V3/otu_data/tree_data 
+LOC_DIR=~/scratch/CB_V4/otu_data/tree_data 
 NEW_TD=$LOC_DIR/full_tree
 
 mkdir -p $NEW_TD

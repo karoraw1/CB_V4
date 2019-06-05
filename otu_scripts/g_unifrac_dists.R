@@ -1,7 +1,7 @@
 
 library(ape)
 library(picante)
-tree_90 = read.tree(file = "/Volumes/KeithSSD/CB_V4/otu_data/clustered_sequences/cluster_members.90.phylip32.mod.nh")
+tree_90 = read.tree(file = "/Volumes/KeithSSD/CB_V4/otu_data/clustered_sequences/cluster_members.100.phylip32.mod.nh")
 tsv.data <- read.delim("/Volumes/KeithSSD/CB_V4/otu_data/clustered_sequences/abundances.c90.tsv", row.names=1)
 prunedphy <- prune.sample(tsv.data, tree_90)
 phydist <- cophenetic(prunedphy)

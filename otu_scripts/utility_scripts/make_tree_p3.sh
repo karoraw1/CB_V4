@@ -20,7 +20,7 @@ mkdir -p $NEW_TD
 
 cd $NEW_TD
 
-QUERY=query_cmsearched
+QUERY=query_high_abund
 
 source activate otu_caller
 
@@ -42,11 +42,11 @@ guppy fat --node-numbers --point-mass --pp -o $QUERY.hug_tol.clean.align.phyloxm
 
 guppy distmat -o $QUERY.hug_tol.clean.align.dist.tab $QUERY.hug_tol.clean.align.jplace
 
-#raxmlHPC-PTHREADS -T 24 -m GTRGAMMA -s $QUERY.hug_tol.clean.align.fasta -n ref.tre -f d -p 12345 
+raxmlHPC-PTHREADS -T 24 -m GTRGAMMA -s $QUERY.hug_tol.clean.align.fasta -n ref.tre -f d -p 12345 
 
-#raxmlHPC-PTHREADS -T 24 -m GTRGAMMA -f I -t RAxML_bestTree.ref.tre -n root.ref.tre
+raxmlHPC-PTHREADS -T 24 -m GTRGAMMA -f I -t RAxML_bestTree.ref.tre -n root.ref.tre
 
-#raxmlHPC-PTHREADS -T 24 -m GTRGAMMA -f J -p 12345 -t RAxML_rootedTree.root.ref.tre -n conf.root.ref.tre -s $QUERY.hug_tol.clean.align.fasta
+raxmlHPC-PTHREADS -T 24 -m GTRGAMMA -f J -p 12345 -t RAxML_rootedTree.root.ref.tre -n conf.root.ref.tre -s $QUERY.hug_tol.clean.align.fasta
 
-#raxmlHPC-PTHREADS -T 24 -f x -p 12345 -t RAxML_rootedTree.root.ref.tre -s $QUERY.hug_tol.clean.align.fasta -m GTRGAMMA -n $QUERY.distmat
+raxmlHPC-PTHREADS -T 24 -f x -p 12345 -t RAxML_rootedTree.root.ref.tre -s $QUERY.hug_tol.clean.align.fasta -m GTRGAMMA -n $QUERY.distmat
 

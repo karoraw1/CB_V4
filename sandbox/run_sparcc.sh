@@ -1,16 +1,16 @@
 conda deactivate
 conda activate sparCC
 
-SPARCC=/Volumes/KeithSSD/CB_V4/sandbox/sparcc
-OUTDIR=/Volumes/KeithSSD/CB_V4/otu_data/sparcc_data
+SPARCC=$(dirname $(pwd))/sandbox/sparcc
+OUTDIR=$(dirname $(pwd))/otu_data/sparcc_data
 OTU_TABLE=$OUTDIR/filtered_otu_table.txt
 
-python $SPARCC/SparCC.py $OTU_TABLE --cor_file=$OUTDIR/sparcc_corr.out --cov_file=$OUTDIR/sparcc_cov.out
+#python $SPARCC/SparCC.py $OTU_TABLE --cor_file=$OUTDIR/sparcc_corr.out --cov_file=$OUTDIR/sparcc_cov.out
 
-N_BOOTS=100
+#N_BOOTS=100
 PERM_=$OUTDIR/perms
-mkdir -p $PERM_DIR
-python $SPARCC/MakeBootstraps.py $OTU_TABLE -n $N_BOOTS -t perm_#.txt -p $PERM_/
+#mkdir -p $PERM_
+#python $SPARCC/MakeBootstraps.py $OTU_TABLE -n $N_BOOTS -t perm_#.txt -p $PERM_/
 
 PCOR_=$OUTDIR/perm_corrs
 mkdir -p $PCOR_DIR

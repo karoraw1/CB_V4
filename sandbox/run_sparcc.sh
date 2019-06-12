@@ -1,5 +1,12 @@
-conda deactivate
-conda activate sparCC
+
+#source activate SparCC
+#conda install python-dateutil=2.4.2
+#conda install numpy=1.9.2 pandas=0.16.2
+#conda install libcxx
+
+ml python/2.7-anaconda53
+source deactivate
+source activate SparCC
 
 SPARCC=$(dirname $(pwd))/sandbox/sparcc
 OUTDIR=$(dirname $(pwd))/otu_data/sparcc_data

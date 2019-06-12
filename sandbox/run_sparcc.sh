@@ -1,17 +1,23 @@
+conda deactivate
+conda activate sparCC
+
 SPARCC=/Volumes/KeithSSD/CB_V4/sandbox/sparcc
-EXAMPLE=$SPARCC/example
-PVALS=$EXAMPLE/pvals
-BASE_COR=$EXAMPLE/basis_corr
-N_BOOTS=3
+OUTDIR=/Volumes/KeithSSD/CB_V4/otu_data/sparcc_data
+OTU_TABLE=$OUTDIR/filtered_otu_table.txt
 
+python $SPARCC/SparCC.py $OTU_TABLE --cor_file=$OUTDIR/sparcc_corr.out --cov_file=$OUTDIR/sparcc_cov.out
 
-python $SPARCC/SparCC.py $EXAMPLE/fake_data.txt -i 5 --cor_file=$BASE_COR/cor_sparcc_test.out
+N_BOOTS=100
+PERM_=$OUTDIR/perms
+mkdir -p $PERM_DIR
+python $SPARCC/MakeBootstraps.py $OTU_TABLE -n $N_BOOTS -t perm_#.txt -p $PERM_/
 
-python $SPARCC/MakeBootstraps.py $EXAMPLE/fake_data.txt -n $N_BOOTS -t test_permutation_#.txt -p $PVALS
+PCOR_=$OUTDIR/perm_corrs
+mkdir -p $PCOR_DIR
+BOOT_NUM=99
+perl -e 'for(0..99){print "$_\n"}' > itercnt.txt
+ml parallel
+parallel  --jobs 24 "python $SPARCC/SparCC.py $PERM_/perm_{}.txt --cor_file=$PCOR_/perm_cor_{}.txt" :::: itercnt.txt
+rm itercnt.txt
 
-for i in $(seq 0 $N_BOOTS); do 
-    echo $i;
-    python $SPARCC/SparCC.py $PVALS/test_permutation_${i}.txt -i 3 --cor_file=$PVALS/test_perm_cor_${i}.txt
-done
-
-python $SPARCC/PseudoPvals.py $BASE_COR/cor_sparcc_test.out $PVALS/test_perm_cor_#.txt 3 -o $PVALS/pvals.two_sided.txt -t two_sided
+python $SPARCC/PseudoPvals.py $OUTDIR/sparcc_corr.out $PCOR_/perm_cor_#.txt 100 -o $OUTDIR/test_pvals.two_sided.txt -t two_sided

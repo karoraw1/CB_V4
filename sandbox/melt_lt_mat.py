@@ -1,11 +1,15 @@
 import pandas as pd
 import numpy as np
 from statsmodels.stats.multitest import multipletests
-test_file = "/Volumes/KeithSSD/CB_V4/otu_data/sparcc_data/sparcc_corr.out"
 
+corrs_file = "/Volumes/KeithSSD/CB_V4/otu_data/sparcc_data/sparcc_corr.out"
 df = pd.read_csv(test_file, sep="\t", index_col=0)
-fake_pvals = np.random.uniform(low=0, high=4, size=df.shape)/4
-p_df = pd.DataFrame(fake_pvals, index=df.index, columns=df.columns)
+
+#fake_pvals = np.random.uniform(low=0, high=4, size=df.shape)/4
+#p_df = pd.DataFrame(fake_pvals, index=df.index, columns=df.columns)
+
+pval_file = "/Volumes/KeithSSD/CB_V4/otu_data/sparcc_data/test_pvals.two_sided.txt"
+p_df = pd.read_csv(pval_file, sep="\t", index_col=0)
 
 def melt_upper_triangle(df_, val_str):
     dfnan = df_.where(np.triu(np.ones(df_.shape)).astype(np.bool))
@@ -19,14 +23,13 @@ mdf = melt_upper_triangle(df, 'correlation')
 
 fulldf = mdf.join(mpdf)
 
-
 # pull total abundances
 # pull taxonomy (order?)
 
 reject, pvals_corrected = multipletests(fulldf['p-value'].values, alpha=0.05, method='fdr_bh')[:2]
-if reject.sum() == 0:
-	reject[1:50] = True
-	np.random.shuffle(reject)
 
 thresholded = fulldf.loc[fulldf.index[reject], ['correlation']].reset_index()
-thresholded.to_csv("/Volumes/KeithSSD/CB_V4/otu_data/sparcc_data/test_correlations.txt", sep="\t", index=False)
+corr_cutoff = abs(thresholded.correlation) > 0.5
+thresholded_cutoff = thresholded[corr_cutoff]
+
+thresholded_cutoff.to_csv("/Volumes/KeithSSD/CB_V4/otu_data/sparcc_data/test_correlations.txt", sep="\t", index=False)

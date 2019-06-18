@@ -1,0 +1,79 @@
+There were 5 sequencing runs with metagenomic data and each has its own folder within:
+	/scratch/groups/sprehei1/Keith_Files/Processed_data_group
+
+The raw files for each are in a subfolder called 'Raw_Unzipped'
+The files that have undergone quality control are called 'QCd'
+
+They include: 
+- CB33_Summer17_NexteraXT: Depth profiles from CB3.3C in Summer 2017
+- SERC_051717_Shotgun_Metagenomes: Dockside samples taken from SERC research station
+- sprehei1_132645: Depth profile from CB3.3C in August(?) 2015 
+- sprehei1_146738: Surface and Bottom samples from many stations and dates in 2017
+- sprehei1_146742: Same as sprehei1_146738
+
+There is a tab-separated sample sheet that has all the library names and sequence runs here:
+
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/data/CB_Shotgun_DataSheet.tsv
+
+The libraries were assembled one by one and the contigs created are listed in this file:
+
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/data/assembly_paths.txt
+
+I aggregated assemblies according to whether they were likely to share information, so each run got its own aggregated assembly excepting the two starting with "sprehei1_14". The aggregated assemblies are here: 
+
+Minimus_Out_Ally/ALLY_miniConts_plusSings.fa (<- this is sprehei1_132645)
+Minimus_Out_CBrest/CBrest_miniConts_plusSings.fa (<- this is sprehei1_14*)
+Minimus_Out_CB33/CB33_miniConts_plusSings.fa (<- CB33_Summer17_NexteraXT )
+Minimus_Out_SERC/SERC_miniConts_plusSings.fa
+Minimus_Out_CTRL/CTRL_miniConts_plusSings.fa (<- these are the control libraries from all runs)
+
+All those folders are within:
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox
+
+The scripts used to make each aggregated assembly are within:
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/minimus_scripts
+
+I then removed any contigs shorter than 1000bp (i think) and renamed the contigs to match the libraries. 
+Those files end with "clean_cntgs.fa" and are in here:
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/minimized_contigs
+
+I called genes on these renamed contigs and they are in a subfolder called 'gene_data'
+The amino acid sequences end in *.faa. The nucleotide sequences for these end in *.fna. 
+The positional information for each gene on each contig is in the *.gff file. If a contig is named something like "CB33_3" the first gene on it will be called "CB33_3_1". 
+
+The script used to call genes is: 
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/batch_call_genes.sh
+
+I only generated metagenomic bins and did annotations for the non-SERC 2017 data. 
+This was mostly because I didn't have time do much more for the poster I was making and I focused my analysis on proving to myself that doing all this processing on two different data sets would produce some overlapping results, which it did.
+
+The binning was done with these two scripts:
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/cb33_binNquant.sh
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/CBrest_binNquant.sh
+
+The genome files are here: 
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/CBrest_Bins/maxbin2_bins
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/CB33_Bins/maxbin2_bins
+
+The completion/contamination stats are here: 
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/CB33_QF/cb33_checkm_out.txt
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/CBrest_QF/cbrest_checkm_out.txt
+
+The KEGG annotations for each contig set are here:
+
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/CB33_Bins/KEGG_Annotations/CB33_genes_user_ko.txt
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/CBrest_Bins/KEGG_Annotations/CBrest_genes_p2_user_ko.txt
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/CBrest_Bins/KEGG_Annotations/CBrest_genes_p1_user_ko.txt
+
+The second batch got split in half so there are two parts.
+I did this by uploading the amino acid files to https://www.kegg.jp/ghostkoala/. 
+
+As far as I know, there isn't great information on iron processing genes in the KEGG or other databases, so we use our own approach which involves searching for homology with two sets of gene sequences associated with known iron metabolizers. The script used for finding these genes is here: 
+
+ /scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/iron_reducers.sh
+
+The data produced by these scripts are tab-separated files within:
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/Iron_Reducers/CBrest
+/scratch/groups/sprehei1/Keith_Files/ChesBayTransect/sandbox/Iron_Reducers/CB33
+
+

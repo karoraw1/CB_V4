@@ -1,55 +1,49 @@
 library(vegan)
 
-tsv.data <- read.delim("../otu_data/clustered_sequences/pplacer_abundances.tsv", row.names=1)
-exp.comm =  tsv.data[, colSums(tsv.data != 0) > 0]
+# Read in data
+tsv.data <- read.delim("../otu_data/dispersal_selection_data/final_rarefied_table.tsv", row.names=1)
 
-sim.comm <- permatswap(exp.comm, "quasiswap", times=3)$perm[[2]]
+# Remove zeros columns
+tsv.data =  tsv.data[, colSums(tsv.data != 0) > 0]
 
-phydf <- read.delim("../otu_data/clustered_sequences/fixed_pplacer_distmat.tsv", row.names=1)
-phydist <- as.matrix(phydf[colnames(exp.comm),colnames(exp.comm)])
+# read in phylo dist mat
+phydf <- read.delim("../otu_data/dispersal_selection_data/not_full_tree_distances.tsv", row.names=1)
 
-exp.comm.dist = as.matrix(vegdist(t(exp.comm), method='bray'))
-sim.comm.dist = as.matrix(vegdist(t(sim.comm), method="bray"))
+# subset it to observed abundances and convert to matrix
+phydf = phydf[ colnames(tsv.data), colnames(tsv.data) ]
+phydist = as.matrix(phydf)
+
+# create simulated community
+sim.tsv <- permatswap(tsv.data, "quasiswap", times=10)$perm[[5]]
+
+# create distance objects and equivalent matrices
+exp.eco.dist = vegdist(t(tsv.data), method='bray')
+exp.comm.dist = as.matrix(exp.eco.dist)
+sim.eco.dist = vegdist(t(sim.tsv), method="bray")
+sim.comm.dist = as.matrix(sim.eco.dist)
+
+# create real correlogram 
+start_time <- Sys.time()
+exp.correlog = mantel.correlog(exp.comm.dist, D.geo=phydist, mult="BH", nperm=999)
+write(exp.correlog, stdout())
+save(exp.correlog, file="../otu_data/dispersal_selection_data/exp_correlog.RData")
+end_time <- Sys.time()
+
+# create simulated correlogram
+start_time <- Sys.time()
+sim.correlog = mantel.correlog(sim.comm.dist, D.geo=phydist, mult="BH", nperm=999)
+write(sim.correlog, stdout())
+save(sim.correlog, file="../otu_data/dispersal_selection_data/sim_correlog.RData")
+end_time <- Sys.time()
+
+# make the competitors correlograms
+library(ecodist)
+start_time <- Sys.time()
+exp.mgram = mgram(exp.eco.dist, as.dist(phydist), trace = TRUE)
+save(exp.mgram, file="../otu_data/dispersal_selection_data/exp_mgram.RData")
+end_time <- Sys.time()
 
 start_time <- Sys.time()
-exp.correlog = mantel.correlog(exp.comm.dist, D.geo=phydist, mult="BH", nperm=5)
+sim.mgram = mgram(sim.comm.dist, as.dist(phydist), trace = TRUE)
+save(sim.mgram, file="../otu_data/dispersal_selection_data/sim_mgram.RData")
 end_time <- Sys.time()
-end_time - start_time
-start_time <- Sys.time()
-exp.correlog = mantel.correlog(exp.comm.dist, D.geo=phydist, mult="BH", nperm=10)
-end_time <- Sys.time()
-end_time - start_time
-start_time <- Sys.time()
-exp.correlog = mantel.correlog(exp.comm.dist, D.geo=phydist, mult="BH", nperm=50)
-sim.correlog <- mantel.correlog(sim.comm.dist, D.geo=phydist, mult="BH", nperm=50)
-end_time <- Sys.time()
-end_time - start_time
-
-summary(exp.correlog)
-summary(sim.correlog)
-par()
-layout(matrix(c(1,2), 1, 2, byrow = TRUE))
-plot(exp.correlog, xlab="Phylogenetic distance"); grid();
-plot(sim.correlog, xlab="Phylogenetic distance"); grid();
-
-
-phydist2 <- as.dist(phydf[colnames(exp.comm),colnames(exp.comm)])
-
-exp.comm.dist2 = vegdist(t(exp.comm), method='bray')
-sim.comm.dist2 = vegdist(t(sim.comm), method="bray")
-
-exp.mgram = mgram(exp.comm.dist2, phydist2, breaks=(1:34)/10, nperm = 50, nboot = 10, trace = TRUE)
-sim.mgram = mgram(sim.comm.dist2, phydist2, breaks=(1:34)/10, nperm = 50, nboot = 10, trace = TRUE)
-layout(matrix(c(1,2), 1, 2, byrow = TRUE))
-plot(exp.mgram, pval = 0.05, xlab = "Phylo Distance", ylab = "Mantel r"); grid();
-plot(sim.mgram, pval = 0.05, xlab = "Phylo Distance", ylab = "Mantel r"); grid();
-
-
-exp.rc.dist = raupcrick(exp.comm, null = "r1", nsimul = 50, chase = FALSE)
-norm.e.rc.d = (exp.rc.dist - .5) * 2
-
-hist(norm.e.rc.d)
-sum(norm.e.rc.d > 0.95) / sum(1:370)
-sum(norm.e.rc.d < -0.95) / sum(1:370)
-sum(abs(norm.e.rc.d) < 0.95) / sum(1:370)
-

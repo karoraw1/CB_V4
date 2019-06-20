@@ -1,13 +1,10 @@
 library(vegan)
-# data(BCI)
-spXsite <- BCI
-reps = 15
-raup_crick=function(spXsite, reps=999){
-	
+
+raup_crick_stegen <- function(spXsite, reps, outfile) {
 	## count number of sites and total species richness across all plots (gamma)
 	n_sites<-nrow(spXsite)
 	gamma<-ncol(spXsite)
-	
+		
 	##make the spXsite matrix into a pres/abs.
 	spXsite_pa <- ceiling(spXsite/max(spXsite))
 
@@ -16,7 +13,7 @@ raup_crick=function(spXsite, reps=999){
 
 	##create an occurrence vector- used to give more weight to widely distributed species in the null model:
 	occur<-apply(spXsite_pa, MARGIN=2, FUN=sum)
-	
+
 	## determine how many unique species richness values are in the dataset
 	alpha_levels<-apply(spXsite_pa, MARGIN=1, FUN=sum)
 	# how many individuals to sample per null community
@@ -31,11 +28,11 @@ raup_crick=function(spXsite, reps=999){
 
 	# an iterator
 	col_count<-1
-	
+
 	##null_array will hold the actual arrays of null distances for every rep for each iteration 
-	
+
 	null_array<-list()
-	
+
 	##looping over each combination of alpha levels:
 	for(a1 in 1:n_sites){
 		for(a2 in a1:n_sites){
@@ -77,17 +74,17 @@ raup_crick=function(spXsite, reps=999){
 			col_count<-col_count+1
 		}
 	}
-	
+
 	##create a new column with both alpha levels to match on:
 	alpha_table$matching<-paste(alpha_table[,1], alpha_table[,2], sep="_")
-	
+
 	#####################
 	##do the test:
-	
+
 	##build a site by site matrix for the results, with the names of the sites in the row and col names:
 	results<-matrix(data=NA, nrow=n_sites, ncol=n_sites, dimnames=list(row.names(spXsite), row.names(spXsite)))
-	
-	
+
+
 	#for each pair of sites (duplicates effort now to make a full matrix instead of 
 	#a half one- but this part should be minimal time as compared to the null model building)
 	for(i in 1:n_sites){
@@ -112,8 +109,16 @@ raup_crick=function(spXsite, reps=999){
 			results[i,j]<-round(rc, digits=2)
 		}
 	}
-	
-	results<-as.dist(t(results))
 
-	return(results)
-	}
+	write.table(results, file = outfile, sep = "\t")
+}
+
+real_spXsite <- read.delim("../otu_data/dispersal_selection_data/final_rarefied_table.tsv", row.names=1)
+real_reps <- 999
+real_out <- "../otu_data/dispersal_selection_data/raup_crick_data.tsv"
+test_spXsite <- real_spXsite[1:10,]
+test_reps <- 15 
+test_out <- "../otu_data/dispersal_selection_data/test_raup_crick.tsv"
+
+raup_crick_stegen(test_spXsite, test_reps, test_out)
+raup_crick_stegen(real_spXsite, real_reps, real_out)
